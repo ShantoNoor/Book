@@ -19,6 +19,7 @@ int nCr(int n, int r)
 int main()
 {
     int n = 6, r = 0;
+    cin >> n >> r;
 
     cout << nCr(n, r) << endl;
     r++;
