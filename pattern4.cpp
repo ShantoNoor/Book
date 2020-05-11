@@ -15,6 +15,8 @@ int main()
         }
         for(j = i; j < n*2-1-i; j++)
         {
+            if(c > 9)
+                c = 1;
             cout << c;
             c++;
             if(c > n-i)

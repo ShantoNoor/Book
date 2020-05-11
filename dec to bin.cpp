@@ -28,8 +28,6 @@ bitset<8> decTbin(int x)
 int main()
 {
 	cout << decTbin(8) << endl;
-	
-
 
 	return 0;
 }

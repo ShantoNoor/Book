@@ -1,5 +1,8 @@
 #include <iostream>
+
+
 using namespace std;
+
 
 int factorial(int a)
 {
@@ -18,8 +21,11 @@ int nCr(int n, int r)
 
 int main()
 {
+
+
     int n = 6, r = 0;
     cin >> n >> r;
+
 
     cout << nCr(n, r) << endl;
     r++;
@@ -35,6 +41,8 @@ int main()
     r++;
     cout << nCr(n, r) << endl;
     r++;
+
+
 
     return 0;
 }
