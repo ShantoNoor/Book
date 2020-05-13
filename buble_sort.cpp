@@ -42,6 +42,7 @@ int main()
         cout << arr[i] << " ";
     }
     cout<<endl;
+    int x;
 
     return 0;
 }

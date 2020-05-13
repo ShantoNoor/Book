@@ -2,6 +2,7 @@
 #include <string>
 #include <algorithm>
 #include <bitset>
+#include <iomanip>
 
 using namespace std;
 
@@ -28,6 +29,7 @@ bitset<8> decTbin(int x)
 int main()
 {
 	cout << decTbin(8) << endl;
-
+	cout << "strcmd" << " >> return " << 78 << " (" << std::hex << 767 << std::dec << ")" << '\n';
+    cout << "Finished in " << std::fixed << std::setprecision(2) << 8787 << "s" << std::endl;
 	return 0;
 }
