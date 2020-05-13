@@ -28,6 +28,7 @@ int main()
     cout << factorial(n++) << endl;
 
     n = 3;
+    int f;
 
     cout << stack_factorial(n++) << endl;
     cout << stack_factorial(n++) << endl;

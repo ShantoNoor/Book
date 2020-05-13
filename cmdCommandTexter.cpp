@@ -19,8 +19,6 @@ int main()
 	str = "\"g++ -std=c++17 -Wshadow -Wall -O2 -Wno-unused-result -O2 -Wno-unused-result \"" + str + ".cpp" + "\"" + " -o " + "\"" + str + ".exe" + "\"" + "\"";
 	cout << str << endl;
 
-	string str2;
-	cout << str2.empty() << endl;
 
 	return 0;
 }

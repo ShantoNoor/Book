@@ -27,8 +27,9 @@ int main()
     {
         cout << arr[i] << " ";
     }
-    cout<<endl;
+    cout<< 7.2e-8 <<endl;
     
+    printf("%lf\n", 7.2e-8);
 
     return 0;
 }
