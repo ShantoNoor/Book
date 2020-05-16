@@ -21,10 +21,12 @@ int binToDec(string str)
 
 int main()
 {
-	cout << binToDec("1010") << endl;;
-	cout << binToDec("111") << endl;;
-	cout << binToDec("10000") << endl;;
-	cout << binToDec("10101") << endl;;
+	cout << binToDec("1010") << endl;
+	cout << binToDec("111") << endl;
+	cout << binToDec("10000") << endl;
+	cout << binToDec("10101") << endl;
+
+	int o;
 
 	return 0;
 }
