@@ -1,25 +1,30 @@
 #include <iostream>
 using namespace std;
 
+bool compare(int x, int y)
+{
+    return x > y;
+}
+
 void insertion_sort(int ara[], int ara_size)
 {
-    int i, j, temp;
+    int i, j, item;
     for(i = 1; i < ara_size; i++)
     {
         j = i - 1;
-        while(ara[j] > ara[j+1] && j >= 0)
+        item = ara[i];
+        while(compare(ara[j], item) && j >= 0)
         {
-            temp = ara[j];
-            ara[j] = ara[j+1];
-            ara[j+1] = temp;
+            ara[j+1] = ara[j];
             j--;
         }
+        ara[j+1] = item;
     }
 }
 
 int main()
 {
-    int arr[5] = {5,3,4,2,1};
+    int arr[5] = {5, 3, 4, 2, 1};
 
     insertion_sort(arr, 5);
 
@@ -27,9 +32,7 @@ int main()
     {
         cout << arr[i] << " ";
     }
-    cout<< 7.2e-8 <<endl;
     
-    printf("%lf\n", 7.2e-8);
 
     return 0;
 }

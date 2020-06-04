@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <conio.h>
 using namespace std;
 
 struct letterCount
@@ -29,6 +29,9 @@ int main()
 	cout << word.small << " " << word.capital << endl;
 	cout << letterCounter("My Name Is Shanto Noor").small << endl;
 	cout << letterCounter("My Name Is Shanto Noor").capital << endl;
+
+	
+	getch(std::cin.ignore());
 
 	return 0;
 }

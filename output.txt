@@ -1,7 +1,8 @@
-1
-6
-15
-20
-15
-6
-1
+<fileName>(.*?)</fileName>
+<info>(.*?)</info>
+<code>\n((\n|.)*?)\n</code>
+<tab>(.*?)</tab>
+<scope>(.*?)</scope>
+
+bool found = regex_search(str, m, e);
+cout << m[1].str();

@@ -14,7 +14,7 @@ int factorial(int a)
     return result;
 }
 
-int nCr(int n, int r);
+int nCr(int n, int r)
 {
     return ( factorial(n) / ( factorial(r) * factorial(n-r) ) );
 }
@@ -26,22 +26,11 @@ int main()
     int n = 6, r = 0;
     cin >> n >> r;
 
-
-    cout << nCr(n, r) << endl;
-    r++;
-    cout << nCr(n, r) << endl;
-    r++;
-    cout << nCr(n, r) << endl;
-    r++;
-    cout << nCr(n, r) << endl;
-    r++;
-    cout << nCr(n, r) << endl;
-    r++;
-    cout << nCr(n, r) << endl;
-    r++;
-    cout << nCr(n, r) << endl;
-    r++;
-
+    while(n+1 > r)
+    {
+        cout << nCr(n, r) << endl;
+        r++;
+    }
 
 
     return 0;
