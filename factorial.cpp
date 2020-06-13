@@ -20,20 +20,7 @@ int stack_factorial(int a)
 
 int main()
 {
-    int n = 3;
-
-    cout << factorial(n++) << endl;
-    cout << factorial(n++) << endl;
-    cout << factorial(n++) << endl;
-    cout << factorial(n++) << endl;
-
-    n = 3;
-    int f;
-
-    cout << stack_factorial(n++) << endl;
-    cout << stack_factorial(n++) << endl;
-    cout << stack_factorial(n++) << endl;
-    cout << stack_factorial(n++) << endl;
+    cout << factorial(8) << endl;
 
     return 0;
 }

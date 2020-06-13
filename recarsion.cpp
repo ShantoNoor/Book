@@ -155,17 +155,23 @@ int NCR(int n, int r)
 	return NCR(n-1, r) + NCR(n-1, r-1);
 }
 
+double exppp(double x, double n)
+{
+	static double i = 1;
+	if(n == 0)
+		return 1.0;
+	double r = (double)x/i;
+	i++;
+	return 1+r*exppp(x, n-1);
+}
+
 int main()
 {
+	cout << exppp(1, 4) << endl;
+	cout << expp(1, 4) << endl;
+	cout << exp(1, 4) << endl;
+	cout << exx(1, 4) << endl;
 	
-	// treefun(3);
-	// funA(20);
-	cout << expp(3, 4) << endl;
-	cout << exp(3, 4) << endl;
-	cout << exx(3, 4) <<  endl;
-
-	cout << fib(9) << endl;
-	cout << NCR(3, 2) << endl;
 
 	return 0;
 }

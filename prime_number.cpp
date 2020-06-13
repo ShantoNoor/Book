@@ -25,10 +25,6 @@ int main()
     int n;
     cin >> n;
 
-    if(isPrire(1))
-        cout << "Prime!" << endl;
-    else
-        cout << "Not Prime!" << endl;
     if(isPrire(n))
         cout << "Prime!" << endl;
     else
